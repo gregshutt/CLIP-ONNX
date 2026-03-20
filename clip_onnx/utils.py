@@ -58,6 +58,6 @@ def scaled_dot_product_attention(Q, K, V, attn_mask, dropout_p):
 
 
 DEFAULT_EXPORT = dict(input_names=['input'], output_names=['output'],
-                      export_params=True, verbose=False, opset_version=12,
+                      export_params=True, verbose=False, opset_version=18,
                       do_constant_folding=True,
                       dynamic_axes={'input': {0: 'batch_size'}, 'output': {0: 'batch_size'}})
